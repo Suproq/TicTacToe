@@ -1,0 +1,67 @@
+.play-field {
+  width: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+.game-field {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  filter: drop-shadow(0px 4px 20px rgba(44, 57, 121, 0.09));
+  gap: 4px;
+  width: min-content;
+}
+
+.game-field_cell {
+  background: #98ffdd;
+  border-radius: 12px;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  position: relative;
+}
+
+.buttons {
+  flex-direction: row;
+  display: flex;
+  position: relative
+}
+
+.reset-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 20px;
+  background: #F7F7F7;
+  border-radius: 12px;
+  margin-top: 10px;
+  position: absolute;
+  left: 0px;
+}
+
+.cancel-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 20px;
+  background: #F7F7F7;
+  border-radius: 12px;
+  position: fixed;
+  margin-top: 10px;
+  position: absolute;
+  right: 0px
+}
+
+.chip {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
