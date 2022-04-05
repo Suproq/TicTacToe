@@ -20,7 +20,7 @@ function checkIsWin(playerIdx) {
         let isWin = true;
 
         for (const cell of winPosition) {
-            isWin = isWin && field[cell] == playerIdx;// === players[playerIdx].symbol;
+            isWin = isWin && field[cell] == playerIdx;
         }
 
         if (isWin) {
@@ -43,6 +43,7 @@ function reset(sbros) {
         }
         motions = 0;
         cros = true;
+        lastNumField = null;
     }
 }
 function motion(numField) {
